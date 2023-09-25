@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+body {
+    background: #3a7bd5;
+    background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+    background: linear-gradient(to right, #3a6073, #3a7bd5);
+}
+
+
+/* Header --> Navbar */
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+
+
+.header-container input {
+    width: 40%;
+    padding: 0.75rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.navbar-logo {
+    max-width: 150px;
+    height: auto;
+}
+
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+
+.search-container input {
+    width: 300px;
+    max-width: 100%;
+    padding: 0.5rem 0 0.5rem 2rem;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pokemon-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    place-items: center;
+    margin: 2rem 0;
+}
+
+
+.pokemon-item {
+    width: 180px;
+    height: 200px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.pokemon-item img {
+    width: 150px;
+    transition: transform .7s;
+    object-fit: cover;
+
+}
+
+.pokemon-item img:hover {
+    transform: scale(1.2);
+}
